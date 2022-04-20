@@ -6,26 +6,22 @@ import Header from './components/Header';
 // import Resume from './components/Resume';
 // import Contact from './components/Contact';
 
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import {
-  ApolloProvider
-} from '@apollo/client';
+//import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
 
 function App() {
   return (
-    <ApolloProvider>
-      <Router>
+
         <div>
           <Nav />
           <Header />
           <div>
-            <Switch>
-              <Route exact path="/" component={About} />
-            </Switch>
+           
+              <About/>
+            
           </div>
         </div>
-      </Router>
-    </ApolloProvider>
+
   );
 }
 
