@@ -3,9 +3,9 @@ import NavLinks from './NavLinks'
 import './Nav.css';
 
 
-const MobileNavigation = () => {
+const MobileNavigation = ({ currentPage, handlePageChange }) => {
     return(
-        <nav className={ClassNames.MobileNavigation}>
+        <nav className="mobile">
         <NavLinks/>
         </nav>
     )

@@ -1,4 +1,3 @@
-import { ClassNames } from "@emotion/react";
 import "./Nav.css";
 import {
   Box,
@@ -18,37 +17,37 @@ import {
   Stack,
 } from "@chakra-ui/react";
 
-const NavLinks = () => {
+const NavLinks = ({ currentPage, handlePageChange }) => {
+
+  
+
   return (
     <Flex>
-      <Menu>
-        <MenuList>
-          <div className="navlinks">
-            <ul>
-              <MenuItem>
-                <li>
-                  <a href="/"> Home</a>
-                </li>
-              </MenuItem>
-              <MenuItem>
-                <li>
-                  <a href="/#about"> About</a>
-                </li>
-              </MenuItem>
-              <MenuItem>
-                <li>
-                  <a href="/#resume"> Resume</a>
-                </li>
-              </MenuItem>
-              <MenuItem>
-                <li>
-                  <a href="/#resume"> Resume</a>
-                </li>
-              </MenuItem>
-            </ul>
-          </div>
-        </MenuList>
-      </Menu>
+      <div className="navlinks">
+        <ul>
+          <li>
+            <a href="/"> Home</a>
+          </li>
+
+          <li>
+            <a href="/#about"> About</a>
+          </li>
+
+          <li>
+          <a
+        href="#resume"
+        onClick={() => handlePageChange("Resume")}
+        className={currentPage === "Resume" ? "nav-link active" : "nav-link"}
+      >
+                Resume
+      </a>
+          </li>
+
+          <li>
+            <a href="/#resume"> Resume</a>
+          </li>
+        </ul>
+      </div>
     </Flex>
   );
 };
