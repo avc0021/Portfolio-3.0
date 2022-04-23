@@ -29,7 +29,6 @@ function App() {
       </Flex>
       <Header currentPage={currentPage} handlePageChange={handlePageChange}/>
       {renderPage()}
-
     </VStack>
   );
 }

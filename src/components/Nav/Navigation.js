@@ -2,7 +2,7 @@
 import NavLinks from './NavLinks';
 
 
-const Navigation = () => {
+const Navigation = ({ currentPage, handlePageChange }) => {
     return(
         <nav className="">
         <NavLinks/>

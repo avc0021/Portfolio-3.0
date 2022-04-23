@@ -1,4 +1,3 @@
-import { ClassName } from "./Nav.css";
 import "./Nav.css";
 import {
   Box,
@@ -18,7 +17,10 @@ import {
   Stack,
 } from "@chakra-ui/react";
 
-const NavLinks = () => {
+const NavLinks = ({ currentPage, handlePageChange }) => {
+
+  
+
   return (
     <Flex>
       <div className="navlinks">
@@ -32,7 +34,13 @@ const NavLinks = () => {
           </li>
 
           <li>
-            <a href="/#resume"> Resume</a>
+          <a
+        href="#resume"
+        onClick={() => handlePageChange("Resume")}
+        className={currentPage === "Resume" ? "nav-link active" : "nav-link"}
+      >
+                Resume
+      </a>
           </li>
 
           <li>
