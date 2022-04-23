@@ -1,13 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
+//import DarkModeSwitch from './components/DarkModeSwitch/darkmodeswitch.js';
+//import Hamburger from './components/Hamburger/hamburger.js'
+import { FaSun, FaMoon } from "react-icons/fa";
 import { IconButton } from "@chakra-ui/button";
 import { useColorMode } from "@chakra-ui/color-mode";
-import { Flex, VStack, Spacer } from "@chakra-ui/layout";
-import { FaSun, FaMoon } from "react-icons/fa";
-import { HamburgerIcon } from "@chakra-ui/icons"
-//import { Image } from "@chakra-ui/image";
-//import { Button } from "@chakra-ui/react";
-import { Menu, MenuButton, MenuList, MenuItem } from "@chakra-ui/react";
+import { Flex, VStack, Heading, Box, Spacer } from "@chakra-ui/layout";
 
 function Nav() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -16,43 +13,31 @@ function Nav() {
   return (
     <VStack p={5}>
       <Flex w="100%">
-        <Menu>
-          <MenuButton
-            as={IconButton}
-            aria-label="Options"
-            icon={<HamburgerIcon />}
-            variant="outline"
-          />
-          <MenuList>
-            <MenuItem  command="About">
-              <Link to="/about"> About </Link>
-            </MenuItem>
-            <MenuItem command="Projects">
-              <Link to="/projects"> Projects </Link>
-            </MenuItem>
-            <MenuItem command="Resume">
-              <Link to="/resume"> Resume </Link>
-            </MenuItem>
-            <MenuItem command="Contact">
-              <Link to="/contact"> Contact </Link>
-            </MenuItem>
-          </MenuList>
-        </Menu>
-        <Spacer></Spacer>
+      <Box w='500px'>
+        <Heading
+          fontSize="7xl"
+          fontWeight="bold"
+          bgGradient="linear(to-r, blue.600, blue.700)"
+          bgClip="text"
+        >
+          Adam Castro
+        </Heading>
+        </Box>
+        <Spacer/>
+        <Box w='70px'>
         <IconButton
-          colorScheme="teal"
-          variant="outline"
-          ml={8}
-          boxSize="47px"
+          ml={600}
           icon={isDark ? <FaSun /> : <FaMoon />}
           isRound="true"
           onClick={toggleColorMode}
         ></IconButton>
+        </Box>
+        <Spacer/>
+
         
       </Flex>
     </VStack>
   );
 }
-
 
 export default Nav;

@@ -11,8 +11,7 @@ function Header () {
         <Stack>
             <Flex alignSelf='center'>
                 <Box align='center'>
-                <Text fontSize='7xl' fontWeight='bold' bgGradient='linear(to-r, cyan.400, blue.500, purple.600)' bgClip='text'>Adam Castro</Text>
-                <Text color={isDark ? 'gray.200' : 'gray.500'}></Text>
+
                 </Box>
             </Flex>
         </Stack>
