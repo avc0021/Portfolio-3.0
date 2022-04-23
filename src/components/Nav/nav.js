@@ -4,9 +4,10 @@ import React from "react";
 import { FaSun, FaMoon } from "react-icons/fa";
 import { IconButton } from "@chakra-ui/button";
 import { useColorMode } from "@chakra-ui/color-mode";
-import { Flex, HStack, Heading, Box, Spacer } from "@chakra-ui/layout";
+import { Flex, Stack, Heading, Box, Spacer } from "@chakra-ui/layout";
 import MobileNavigation from "./MobileNavigation";
 import Navigation from "./Navigation";
+//import './Nav.css';
 import './Nav.css';
 
 
@@ -15,7 +16,7 @@ function Nav() {
   const isDark = colorMode === "dark";
 
   return (
-    <HStack p={5}>
+    <Stack>
       <Flex w="100%">
         <Box w="500px">
           <Heading
@@ -37,10 +38,14 @@ function Nav() {
           ></IconButton>
         </Box>
         <Spacer />
+        <Box>
+        <div className="navlinks">
         <MobileNavigation />
             <Navigation />
+            </div>
+            </Box>
       </Flex>
-    </HStack>
+    </Stack>
 
   );
 }

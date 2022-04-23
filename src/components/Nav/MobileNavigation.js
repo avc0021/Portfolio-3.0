@@ -5,7 +5,7 @@ import './Nav.css';
 
 const MobileNavigation = () => {
     return(
-        <nav className={ClassNames.MobileNavigation}>
+        <nav className="mobile">
         <NavLinks/>
         </nav>
     )

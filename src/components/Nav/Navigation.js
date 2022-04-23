@@ -1,10 +1,10 @@
-import { ClassNames } from '@emotion/react';
+//import { ClassNames } from '@emotion/react';
 import NavLinks from './NavLinks';
 
 
 const Navigation = () => {
     return(
-        <nav className={ClassNames.Navigation}>
+        <nav className="">
         <NavLinks/>
         </nav>
     )

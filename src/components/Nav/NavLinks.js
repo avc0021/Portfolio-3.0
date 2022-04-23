@@ -1,4 +1,4 @@
-import { ClassNames } from "@emotion/react";
+import { ClassName } from "./Nav.css";
 import "./Nav.css";
 import {
   Box,
@@ -21,34 +21,25 @@ import {
 const NavLinks = () => {
   return (
     <Flex>
-      <Menu>
-        <MenuList>
-          <div className="navlinks">
-            <ul>
-              <MenuItem>
-                <li>
-                  <a href="/"> Home</a>
-                </li>
-              </MenuItem>
-              <MenuItem>
-                <li>
-                  <a href="/#about"> About</a>
-                </li>
-              </MenuItem>
-              <MenuItem>
-                <li>
-                  <a href="/#resume"> Resume</a>
-                </li>
-              </MenuItem>
-              <MenuItem>
-                <li>
-                  <a href="/#resume"> Resume</a>
-                </li>
-              </MenuItem>
-            </ul>
-          </div>
-        </MenuList>
-      </Menu>
+      <div className="navlinks">
+        <ul>
+          <li>
+            <a href="/"> Home</a>
+          </li>
+
+          <li>
+            <a href="/#about"> About</a>
+          </li>
+
+          <li>
+            <a href="/#resume"> Resume</a>
+          </li>
+
+          <li>
+            <a href="/#resume"> Resume</a>
+          </li>
+        </ul>
+      </div>
     </Flex>
   );
 };
