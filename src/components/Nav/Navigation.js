@@ -1,5 +1,13 @@
+import { ClassNames } from '@emotion/react';
+import NavLinks from './NavLinks';
+
+
 const Navigation = () => {
-    return("")
+    return(
+        <nav className={ClassNames.Navigation}>
+        <NavLinks/>
+        </nav>
+    )
 }
 
 export default Navigation
