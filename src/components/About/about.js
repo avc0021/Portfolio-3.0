@@ -21,7 +21,7 @@ const About = () => {
         {/* <img src={coverImage} className="coverImg" style={{ width: "20%" }} alt="cover" /> */}
         <Box mt={isNotSmallerScreen ? "0" : 16} align='flex-start'>
         <Text
-          fontSize="5xl"
+          fontSize="3xl"
           fontWeight="bold"
           bgGradient="linear(to-r, cyan.400, blue.500, purple.600)"
           bgClip="text"

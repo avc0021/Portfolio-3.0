@@ -9,6 +9,7 @@ import { Button } from "@chakra-ui/react";
 import MobileNavigation from "./MobileNavigation";
 import Navigation from "./Navigation";
 import "./Nav.css";
+//import coverImage from "./../../assets/images/alogo.png"
 
 const Nav = (props) => {
 
@@ -83,11 +84,12 @@ const MenuLinks = ({ isOpen }) => {
         direction={["column", "row", "row", "row"]}
         pt={[4, 4, 0, 0]}
       >
-        <MenuItem to="/">Home</MenuItem>
-        <MenuItem to="/how">About </MenuItem>
-        <MenuItem to="/faetures">Projects </MenuItem>
-        <MenuItem to="/pricing">Resume </MenuItem>
-        <MenuItem to="/signup" isLast>
+        <MenuItem>
+        <Text fontSize='4x1' fontWeight='bold' bgGradient='linear(to-r, cyan.400, blue.500, purple.600)' bgClip='text'>Adam Castro </Text></MenuItem>
+        <MenuItem to="/about">About </MenuItem>
+        <MenuItem to="/projects">Projects </MenuItem>
+        <MenuItem to="/resume">Resume </MenuItem>
+        <MenuItem to="/contact" isLast>
           Contact
         </MenuItem>
       </Stack>
