@@ -5,6 +5,7 @@ import Header from './components/Header/header.js';
 import About from './components/About/about.js';
 import { Flex, VStack, Heading, Spacer } from "@chakra-ui/layout";
 import Resume from './components/Resume/resume.js';
+import DarkModeSwitch from './components/DarkModeSwitch/darkmodeswitch.js';
 // import Contact from './components/Contact';
 //import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
@@ -26,6 +27,7 @@ function App() {
     <VStack p={5}>
       <Flex w="100%">
       <Nav />
+      <DarkModeSwitch/>
       </Flex>
       <Header currentPage={currentPage} handlePageChange={handlePageChange}/>
       {renderPage()}

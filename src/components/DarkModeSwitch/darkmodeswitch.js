@@ -22,7 +22,6 @@ function DarkModeSwitch() {
           fontWeight="semibold"
           color="cyan.400"
         ></Heading>
-
         <IconButton colorScheme='teal' variant='outline'
           ml={8}
           boxSize="47px"
