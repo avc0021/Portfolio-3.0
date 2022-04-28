@@ -37,13 +37,21 @@ const Link = styled.a`
   font-size: inherit;
 `;
 
-export function NavLinks(props) {
+export function NavLinks(props,{ currentPage, handlePageChange }) {
+  
   return (
     <NavLinksContainer>
       <LinksWrapper>
-        <LinkItem>
-          <Link to="#about">About</Link>
+      <LinkItem>
+          <Link to="#home">Home</Link>
         </LinkItem>
+        <LinkItem
+        href="#about"
+        onClick={() => handlePageChange("About")}
+        className={currentPage === "About" ? "nav-link active" : "nav-link"}
+      >
+        About Me
+      </LinkItem>
         <LinkItem>
           <Link href="#resume">Resume</Link>
         </LinkItem>

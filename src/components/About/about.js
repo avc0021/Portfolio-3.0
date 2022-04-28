@@ -3,10 +3,12 @@ import React from "react";
 import { Stack, Flex, Box, Text } from "@chakra-ui/layout";
 import { useMediaQuery } from "@chakra-ui/media-query";
 import { useColorMode } from "@chakra-ui/color-mode";
+import { useHistory } from "react-router-dom";
 
 function About() {
   const { colorMode } = useColorMode();
   const isDark = colorMode === "dark";
+  
 
   const [isNotSmallerScreen] = useMediaQuery("(min-width:600px)");
 

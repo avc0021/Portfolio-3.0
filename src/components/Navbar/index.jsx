@@ -34,7 +34,7 @@ const RightSection = styled.div`
   display: flex;
 `;
 
-export function Navbar(props) {
+export function Navbar(props,{ currentPage, handlePageChange }) {
   const isMobile = useMediaQuery({ maxWidth: DeviceSize.mobile });
 
   const { colorMode, toggleColorMode } = useColorMode();
@@ -44,7 +44,7 @@ export function Navbar(props) {
     <NavbarContainer>
       <LeftSection>{/* <Logo /> */}</LeftSection>
       <MiddleSection>{!isMobile && <NavLinks />}</MiddleSection>
-      <RightSection>{isMobile && <MobileNavLinks />}</RightSection>
+      {/* <RightSection>{isMobile && <MobileNavLinks />}</RightSection> */}
       <IconButton
         colorScheme="teal"
         variant="outline"
