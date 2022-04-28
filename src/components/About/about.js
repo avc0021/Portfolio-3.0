@@ -4,7 +4,7 @@ import { Stack, Flex, Box, Text } from "@chakra-ui/layout";
 import { useMediaQuery } from "@chakra-ui/media-query";
 import { useColorMode } from "@chakra-ui/color-mode";
 
-const About = () => {
+function About() {
   const { colorMode } = useColorMode();
   const isDark = colorMode === "dark";
 
