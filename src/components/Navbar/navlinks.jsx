@@ -42,16 +42,16 @@ export function NavLinks(props) {
     <NavLinksContainer>
       <LinksWrapper>
         <LinkItem>
-          <Link href="/about">About</Link>
+          <Link to="#about">About</Link>
         </LinkItem>
         <LinkItem>
-          <Link href="#">How it works</Link>
+          <Link href="#resume">Resume</Link>
         </LinkItem>
         <LinkItem>
-          <Link href="#">Explore</Link>
+          <Link href="#projects">Projects</Link>
         </LinkItem>
         <LinkItem>
-          <Link href="#">Impact</Link>
+          <Link href="#contact">Contact</Link>
         </LinkItem>
       </LinksWrapper>
     </NavLinksContainer>
