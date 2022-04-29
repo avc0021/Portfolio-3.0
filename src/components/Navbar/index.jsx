@@ -2,14 +2,22 @@ import { IconButton } from "@chakra-ui/button";
 import { FaSun, FaMoon } from "react-icons/fa";
 import React from "react";
 import { useColorMode } from "@chakra-ui/color-mode";
+import { Flex, VStack, Box, Spacer } from "@chakra-ui/layout";
 
 function Navbar({ currentPage, handlePageChange }) {
   const { colorMode, toggleColorMode } = useColorMode();
   const isDark = colorMode === "dark";
 
   return (
-    <section className="nav nav-tabs">
-      <div className="navbar-item">
+    <VStack>
+      <Flex align="center"
+      justify="right"
+      wrap="wrap"
+      w="100%"
+      mb={8}
+      p={8}
+      bg={["primary.500"]}>
+        <Box p='2'>
       <a
         href="#about"
         onClick={() => handlePageChange("About")}
@@ -17,8 +25,8 @@ function Navbar({ currentPage, handlePageChange }) {
       >
         About Me
       </a>
-      </div>
-      <div className="navbar-item">
+      </Box>
+      <Box p='2'>
       <a
         href="#resume"
         onClick={() => handlePageChange("Resume")}
@@ -26,8 +34,8 @@ function Navbar({ currentPage, handlePageChange }) {
       >
         Resume
       </a>
-      </div>
-      <div className="navbar-item">
+      </Box>
+      <Box p='2'>
       <a
         href="#projects"
         onClick={() => handlePageChange("Projects")}
@@ -35,8 +43,8 @@ function Navbar({ currentPage, handlePageChange }) {
       >
         Projects
       </a>
-      </div>
-      <div className="navbar-item">
+      </Box>
+      <Box p='2'>
       <a
         href="#contact"
         onClick={() => handlePageChange("Contact")}
@@ -44,7 +52,7 @@ function Navbar({ currentPage, handlePageChange }) {
       >
         Contact Info
       </a>
-      </div>
+      </Box>
       <IconButton
           colorScheme="teal"
           variant="outline"
@@ -54,7 +62,8 @@ function Navbar({ currentPage, handlePageChange }) {
           isRound="true"
           onClick={toggleColorMode}
         ></IconButton>
-    </section>
+        </Flex>
+    </VStack>
 
   );
 }
