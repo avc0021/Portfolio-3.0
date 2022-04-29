@@ -1,9 +1,8 @@
 import React from "react";
 //import coverImage from "../../assets/ac1/aj.jpg";
 import { VStack, Flex, Box, Text } from "@chakra-ui/layout";
-import { useMediaQuery } from "@chakra-ui/media-query";
 import { useColorMode } from "@chakra-ui/color-mode";
-import { useHistory } from "react-router-dom";
+
 
 function About() {
   const { colorMode } = useColorMode();
@@ -12,7 +11,7 @@ function About() {
   return (
     <VStack>
       <Flex spacing="200px" p={"0"} alignSelf="flex-start">
-        <Box p='4'>
+        <Box p='20'>
           <Text
             fontSize="3xl"
             fontWeight="bold"
