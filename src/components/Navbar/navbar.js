@@ -3,6 +3,9 @@ import { FaSun, FaMoon } from "react-icons/fa";
 import React from "react";
 import { useColorMode } from "@chakra-ui/color-mode";
 import { Flex, VStack, Box, Spacer } from "@chakra-ui/layout";
+import { Image } from "@chakra-ui/image";
+
+import { ACLogo } from "../../assets/images/logoac.png";
 
 function Navbar({ currentPage, handlePageChange }) {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -17,6 +20,10 @@ function Navbar({ currentPage, handlePageChange }) {
       mb={8}
       p={8}
       bg={["primary.500"]}>
+        {/* <Box p='2>'>
+        <Image src={ACLogo} alt="cover">
+        </Image>
+        </Box> */}
         <Box p='2'>
       <a
         href="#about"
@@ -50,7 +57,7 @@ function Navbar({ currentPage, handlePageChange }) {
         onClick={() => handlePageChange("Contact")}
         className={currentPage === "Contact" ? "nav-link active" : "nav-link"}
       >
-        Contact Info
+        Contact
       </a>
       </Box>
       <IconButton

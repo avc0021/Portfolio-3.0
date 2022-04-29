@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import   Navbar  from "./components/Navbar";
+import   Navbar  from "./components/Navbar/navbar.js";
 //import Header from "./components/Header/header.js";
 // import Projects from './components/Projects';
 import About from "./components/About/about.js";
@@ -12,7 +12,7 @@ import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 
 function App() {
 
-    const [currentPage, setCurrentPage] = useState('Home');
+    const [currentPage, setCurrentPage] = useState('About');
     const renderPage =() => {    
       if (currentPage === 'Home') {
         return <Home />;

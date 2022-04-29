@@ -1,13 +1,24 @@
 import React from "react";
+import { VStack, Link, Box, Text } from '@chakra-ui/layout';
+import { Button } from "@chakra-ui/react";
 
 function Resume() {
   return (
-    <section className="my-5">
-      <div className="allResume">
-          <h1>Resume</h1>
-          <h3>
-          <a href="https://docs.google.com/document/d/1vQMCjw9w_M-rwZhCUCfPWKmV6hYcc5ucvww9RfUCYZ4/edit?usp=sharing">Click here to download!</a>
-          </h3>
+    <VStack direction={['column', 'row']} spacing='24px'>
+      <Box>
+      <Text
+          fontSize="3xl"
+          fontWeight="bold"
+          bgGradient="linear(to-r, cyan.400, blue.500, purple.600)"
+          bgClip="text"
+        >
+          About Me
+        </Text>
+        <Text mt='3' mb='3' >
+            <Link onClick={() => window.open("https://docs.google.com/document/d/1vQMCjw9w_M-rwZhCUCfPWKmV6hYcc5ucvww9RfUCYZ4/edit?usp=sharing")}> Download Resume </Link>
+            </Text>
+
+       
         <h2 className="resume">Front-End Proficiences</h2>
           <div className="front">
             <ul>HTML</ul>
@@ -33,8 +44,8 @@ function Resume() {
             <ul>Heroku</ul>
             <ul>Github</ul>
           </div>
-      </div>
-    </section>
+      </Box>
+    </VStack>
   );
 }
 
