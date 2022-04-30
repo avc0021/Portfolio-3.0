@@ -23,11 +23,8 @@ export default function Project2() {
         p={10}
         overflow={"hidden"}
       >
-        <Box h={"140px"} bg={"gray.100"} mt={-6} mb={90} pos={"relative"} >
-          <img objectFit="cover" 
-            src={Sky} alt="My Night Sky"
-            
-          />
+        <Box h={"140px"} bg={"gray.100"} mt={-6} mb={90} pos={"relative"}>
+          <img objectFit="cover" src={Sky} alt="My Night Sky" />
         </Box>
         <Stack mt={3}>
           <Heading
@@ -38,7 +35,8 @@ export default function Project2() {
             My Night Sky
           </Heading>
           <Text color={"gray.500"}>
-          A website for astronomy lovers to see where the ISS is according to their location and what phase of the moon it currently is.
+            A website for astronomy lovers to see where the ISS is according to
+            their location and what phase of the moon it currently is.
           </Text>
         </Stack>
         <Stack mt={8} direction={"row"} spacing={4}>
@@ -57,7 +55,9 @@ export default function Project2() {
             _focus={{
               bg: "blue.500",
             }}
-            onClick={() => window.open("https://coevpen.github.io/my-night-sky/")}
+            onClick={() =>
+              window.open("https://coevpen.github.io/my-night-sky/")
+            }
           >
             Demo
           </Button>
@@ -76,9 +76,11 @@ export default function Project2() {
             _focus={{
               bg: "blue.500",
             }}
-            onClick={() => window.open("https://github.com/coevpen/my-night-sky")}
+            onClick={() =>
+              window.open("https://github.com/coevpen/my-night-sky")
+            }
           >
-Github
+            Github
           </Button>
         </Stack>
       </Box>

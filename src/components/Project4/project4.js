@@ -58,7 +58,9 @@ export default function Project4() {
             _focus={{
               bg: "blue.500",
             }}
-            onClick={() => window.open("https://jam-group-project.herokuapp.com/")}
+            onClick={() =>
+              window.open("https://jam-group-project.herokuapp.com/")
+            }
           >
             Demo
           </Button>
@@ -77,9 +79,11 @@ export default function Project4() {
             _focus={{
               bg: "blue.500",
             }}
-            onClick={() => window.open("https://github.com/jessebubble/parachute-play")}
+            onClick={() =>
+              window.open("https://github.com/jessebubble/parachute-play")
+            }
           >
-Github
+            Github
           </Button>
         </Stack>
       </Box>

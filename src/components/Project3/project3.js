@@ -9,6 +9,7 @@ import {
   Button,
   useColorModeValue,
 } from "@chakra-ui/react";
+import BudgetTracker from "../../assets/images/btracker.png";
 
 export default function Project3() {
   return (
@@ -23,11 +24,7 @@ export default function Project3() {
         overflow={"hidden"}
       >
         <Box h={"140px"} bg={"gray.100"} mt={-6} mb={90} pos={"relative"}>
-          <Image
-            src={
-              "https://github.com/jessebubble/parachute-play/raw/main/client/src/components/images/screenshot2.png"
-            }
-          />
+          <img src={BudgetTracker} alt="My Night Sky" />
         </Box>
         <Stack mt={3}>
           <Heading
@@ -38,8 +35,9 @@ export default function Project3() {
             Parachute Play
           </Heading>
           <Text color={"gray.500"}>
-            J.A.M. developed a word game built using the MERN stack, styling
-            with Chakra-UI and Figma
+            Budget Tracker allows the user to track withdrawals and deposits
+            with or without data/internet connection. This will allow the user
+            to accurately balance account.
           </Text>
         </Stack>
         <Stack mt={8} direction={"row"} spacing={4}>
@@ -58,7 +56,9 @@ export default function Project3() {
             _focus={{
               bg: "blue.500",
             }}
-            onClick={() => window.open("https://jam-group-project.herokuapp.com/")}
+            onClick={() =>
+              window.open("https://stormy-headland-24832.herokuapp.com/")
+            }
           >
             Demo
           </Button>
@@ -77,9 +77,11 @@ export default function Project3() {
             _focus={{
               bg: "blue.500",
             }}
-            onClick={() => window.open("https://github.com/jessebubble/parachute-play")}
+            onClick={() =>
+              window.open("https://github.com/avc0021/Budget-Tracker")
+            }
           >
-Github
+            Github
           </Button>
         </Stack>
       </Box>
