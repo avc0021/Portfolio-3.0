@@ -9,8 +9,9 @@ import {
   Button,
   useColorModeValue,
 } from "@chakra-ui/react";
+import Sky from "../../assets/images/mynightsky.png";
 
-export default function Project1() {
+export default function Project2() {
   return (
     <Stack p={5}>
       <Box
@@ -23,11 +24,7 @@ export default function Project1() {
         overflow={"hidden"}
       >
         <Box h={"140px"} bg={"gray.100"} mt={-6} mb={90} pos={"relative"}>
-          <Image
-            src={
-              "https://github.com/jessebubble/parachute-play/raw/main/client/src/components/images/screenshot2.png"
-            }
-          />
+          <img objectFit="cover" src={Sky} alt="My Night Sky" />
         </Box>
         <Stack mt={3}>
           <Heading
@@ -35,11 +32,11 @@ export default function Project1() {
             fontSize={"2xl"}
             fontFamily={"body"}
           >
-            Parachute Play
+            My Night Sky
           </Heading>
           <Text color={"gray.500"}>
-            J.A.M. developed a word game built using the MERN stack, styling
-            with Chakra-UI and Figma
+            A website for astronomy lovers to see where the ISS is according to
+            their location and what phase of the moon it currently is.
           </Text>
         </Stack>
         <Stack mt={8} direction={"row"} spacing={4}>
@@ -59,7 +56,7 @@ export default function Project1() {
               bg: "blue.500",
             }}
             onClick={() =>
-              window.open("https://jam-group-project.herokuapp.com/")
+              window.open("https://coevpen.github.io/my-night-sky/")
             }
           >
             Demo
@@ -80,7 +77,7 @@ export default function Project1() {
               bg: "blue.500",
             }}
             onClick={() =>
-              window.open("https://github.com/jessebubble/parachute-play")
+              window.open("https://github.com/coevpen/my-night-sky")
             }
           >
             Github
