@@ -54,7 +54,7 @@ import {
                           color="#DCE2FF"
                           _hover={{ border: '2px solid #1C6FEB' }}
                           leftIcon={<MdPhone color="#1970F1" size="20px" />}>
-                          +91-988888888
+                          2103830681
                         </Button>
                         <Button
                           size="md"
@@ -64,7 +64,7 @@ import {
                           color="#DCE2FF"
                           _hover={{ border: '2px solid #1C6FEB' }}
                           leftIcon={<MdEmail color="#1970F1" size="20px" />}>
-                          hello@abc.com
+                          avc0021@gmail.com
                         </Button>
                         <Button
                           size="md"
@@ -74,7 +74,7 @@ import {
                           color="#DCE2FF"
                           _hover={{ border: '2px solid #1C6FEB' }}
                           leftIcon={<MdLocationOn color="#1970F1" size="20px" />}>
-                          Karnavati, India
+                          San Antonio,Tx
                         </Button>
                       </VStack>
                     </Box>
