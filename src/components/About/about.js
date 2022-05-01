@@ -2,16 +2,19 @@ import React from "react";
 //import coverImage from "../../assets/ac1/aj.jpg";
 import { VStack, Flex, Box, Text } from "@chakra-ui/layout";
 import { useColorMode } from "@chakra-ui/color-mode";
-
-
+import { Image } from "@chakra-ui/image";
+import { Container } from "@chakra-ui/react"
+;
 function About() {
   const { colorMode } = useColorMode();
   const isDark = colorMode === "dark";
 
   return (
     <VStack>
-      <Flex spacing="200px" p={"0"} alignSelf="flex-start">
-        <Box p='20'>
+      <Container centerContent overflow="hidden">
+      <Flex direction={"column"} >
+        <Box p="20"           
+          >
           <Text
             fontSize="4xl"
             fontWeight="bold"
@@ -20,6 +23,16 @@ function About() {
           >
             About Me
           </Text>
+          <Image
+              ml={2}
+              objectFit="cover"
+              height={"40vh"}
+              borderRadius="full"
+              position="center"
+              src="https://ca.slack-edge.com/T02GXRVP58D-U02HW6NHXTP-6f10994cffea-512"
+              alt="profile pic adam"
+              onClick={() => window.open("https://github.com/avc0021")}
+            />
           <Text color={isDark ? "gray.200" : "gray.500"}>
             Full Stack Web Developer leveraging a background in biotechnology
             and music to build life-enhancing user experiences on mobile and web
@@ -33,6 +46,7 @@ function About() {
           </Text>
         </Box>
       </Flex>
+      </Container>
     </VStack>
   );
 }
