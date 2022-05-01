@@ -13,7 +13,7 @@ function About() {
       <Flex spacing="200px" p={"0"} alignSelf="flex-start">
         <Box p='20'>
           <Text
-            fontSize="3xl"
+            fontSize="4xl"
             fontWeight="bold"
             bgGradient="linear(to-r, cyan.400, blue.500, purple.600)"
             bgClip="text"
