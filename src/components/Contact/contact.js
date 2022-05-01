@@ -21,17 +21,18 @@ import {
     MdPhone,
     MdEmail,
     MdLocationOn,
-    MdFacebook,
+    
     MdOutlineEmail,
   } from 'react-icons/md';
-  import { BsGithub, BsDiscord, BsPerson } from 'react-icons/bs';
+  import { BsGithub, BsDiscord, BsPerson, BsLinkedin } from 'react-icons/bs';
+  import { ImInstagram } from 'react-icons/im';
   
   export default function contact() {
     return (
       <Container maxW="full" mt={0} centerContent overflow="hidden">
         <Flex>
           <Box
-            bg="#02054B"
+            bg="#92a1a6"
             color="white"
             borderRadius="lg"
             m={{ sm: 4, md: 16, lg: 10 }}
@@ -51,7 +52,7 @@ import {
                           height="48px"
                           width="200px"
                           variant="ghost"
-                          color="#DCE2FF"
+                          color="#E6EAE9"
                           _hover={{ border: '2px solid #1C6FEB' }}
                           leftIcon={<MdPhone color="#1970F1" size="20px" />}>
                           2103830681
@@ -61,7 +62,7 @@ import {
                           height="48px"
                           width="200px"
                           variant="ghost"
-                          color="#DCE2FF"
+                          color="#E6EAE9"
                           _hover={{ border: '2px solid #1C6FEB' }}
                           leftIcon={<MdEmail color="#1970F1" size="20px" />}>
                           avc0021@gmail.com
@@ -71,7 +72,7 @@ import {
                           height="48px"
                           width="200px"
                           variant="ghost"
-                          color="#DCE2FF"
+                          color="#E6EAE9"
                           _hover={{ border: '2px solid #1C6FEB' }}
                           leftIcon={<MdLocationOn color="#1970F1" size="20px" />}>
                           San Antonio,Tx
@@ -89,7 +90,7 @@ import {
                         size="lg"
                         isRound={true}
                         _hover={{ bg: '#0D74FF' }}
-                        icon={<MdFacebook size="28px" />}
+                        icon={<BsLinkedin size="28px" />}
                       />
                       <IconButton
                         aria-label="github"
@@ -105,7 +106,7 @@ import {
                         size="lg"
                         isRound={true}
                         _hover={{ bg: '#0D74FF' }}
-                        icon={<BsDiscord size="28px" />}
+                        icon={<ImInstagram size="28px" />}
                       />
                     </HStack>
                   </Box>
