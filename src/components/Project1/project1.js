@@ -9,6 +9,7 @@ import {
   Button,
   useColorModeValue,
 } from "@chakra-ui/react";
+//import { BsGithub } from "react-icons/bs";
 
 export default function Project1() {
   return (
@@ -16,7 +17,7 @@ export default function Project1() {
       <Box
         maxW={"445px"}
         w={"full"}
-        bg={useColorModeValue("white", "gray.900")}
+        bg="#344c5c"
         boxShadow={"2xl"}
         rounded={"md"}
         p={10}
@@ -31,7 +32,7 @@ export default function Project1() {
         </Box>
         <Stack mt={3}>
           <Heading
-            color={useColorModeValue("gray.700", "white")}
+            color={"white"}
             fontSize={"2xl"}
             fontFamily={"body"}
           >
@@ -83,7 +84,7 @@ export default function Project1() {
               window.open("https://github.com/jessebubble/parachute-play")
             }
           >
-            Github
+            GitHub
           </Button>
         </Stack>
       </Box>
