@@ -1,16 +1,20 @@
 import React from "react";
-import { VStack, Link, Box, Text, Heading } from "@chakra-ui/layout";
+import { VStack, Link, Box, Text, Flex } from "@chakra-ui/layout";
 import { Button } from "@chakra-ui/react";
 
 function Resume() {
   return (
-    <VStack direction={["column", "row"]} spacing="24px">
+    <VStack >
+      <Flex >
       <Box
         bg="#344c5c"
         color="white"
         borderRadius="lg"
-        m={{ sm: 4, md: 16, lg: 10 }}
-        p={{ sm: 5, md: 5, lg: 16 }}
+        w={"full"}
+        maxW={"445px"}
+        
+        
+        p={10}
       >
         <Text
           fontSize="4xl"
@@ -67,6 +71,7 @@ function Resume() {
           <ul>Github</ul>
        
       </Box>
+      </Flex>
     </VStack>
   );
 }
