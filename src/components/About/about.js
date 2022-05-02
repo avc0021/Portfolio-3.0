@@ -3,36 +3,37 @@ import React from "react";
 import { VStack, Flex, Box, Text } from "@chakra-ui/layout";
 import { useColorMode } from "@chakra-ui/color-mode";
 import { Image } from "@chakra-ui/image";
-import { Container } from "@chakra-ui/react"
-;
+import { Center } from "@chakra-ui/react";
+
 function About() {
   const { colorMode } = useColorMode();
   const isDark = colorMode === "dark";
 
   return (
-    <VStack>
-      <Container centerContent overflow="hidden">
-      <Flex direction={"column"} >
-        <Box p="20"           
-          >
+    <VStack p={5}>
+      <Flex mt={8} direction={"column"} spacing={4}>
+        <Box>
           <Text
             fontSize="4xl"
             fontWeight="bold"
             bgGradient="linear(to-r, cyan.400, blue.500, purple.600)"
             bgClip="text"
+            align="center"
+            mb={"30px"}
           >
-            About Me
+            About
           </Text>
-          <Image
-              ml={2}
-              objectFit="cover"
-              height={"40vh"}
+          <Center>
+            <Image
+              height={"30vh"}
               borderRadius="full"
-              position="center"
+              mb={"30px"}
+              align="center"
               src="https://ca.slack-edge.com/T02GXRVP58D-U02HW6NHXTP-6f10994cffea-512"
               alt="profile pic adam"
               onClick={() => window.open("https://github.com/avc0021")}
             />
+          </Center>
           <Text color={isDark ? "gray.200" : "gray.500"}>
             Full Stack Web Developer leveraging a background in biotechnology
             and music to build life-enhancing user experiences on mobile and web
@@ -46,7 +47,6 @@ function About() {
           </Text>
         </Box>
       </Flex>
-      </Container>
     </VStack>
   );
 }
