@@ -17,7 +17,7 @@ export default function Project4() {
       <Box
         maxW={"445px"}
         w={"full"}
-        bg={useColorModeValue("white", "gray.900")}
+        bg={"#344c5c"}
         boxShadow={"2xl"}
         rounded={"md"}
         p={10}
