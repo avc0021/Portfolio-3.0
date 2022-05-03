@@ -32,10 +32,10 @@ export default function Project3() {
             fontSize={"2xl"}
             fontFamily={"body"}
           >
-            Parachute Play
+            Budget Tracker
           </Heading>
           <Text color={"gray.500"}>
-            Budget Tracker allows the user to track withdrawals and deposits
+            This app allows the user to track withdrawals and deposits
             with or without data/internet connection. This will allow the user
             to accurately balance account.
           </Text>
