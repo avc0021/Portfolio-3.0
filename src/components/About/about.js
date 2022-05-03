@@ -14,13 +14,13 @@ function About() {
       <Flex mt={8} direction={"column"} spacing={4}>
         <Box>
         
-        <Logo alignSelf="center"></Logo>
+        <Logo></Logo>
        
           <Center>
             <Image
               height={"30vh"}
               borderRadius="full"
-              mb={"30px"}
+              mb={"80px"}
               align="center"
               src="https://ca.slack-edge.com/T02GXRVP58D-U02HW6NHXTP-6f10994cffea-512"
               alt="profile pic adam"
