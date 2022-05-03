@@ -37,7 +37,7 @@ export default function Contact() {
               <WrapItem>
                 <Box>
                   <Heading>
-                    {" "}
+                    
                     <Text
                       fontSize="4xl"
                       fontWeight="bold"
@@ -71,8 +71,9 @@ export default function Contact() {
                         color="white"
                         _hover={{ border: "2px solid #1C6FEB" }}
                         leftIcon={<MdEmail color="#1970F1" size="20px" />}
+                        
                       >
-                        avc0021@gmail.com
+                        <a href = "mailto:avc0021@gmail.com">AVC0021@GMAIL.COM</a>
                       </Button>
                       <Button
                         size="md"
@@ -94,12 +95,13 @@ export default function Contact() {
                     alignItems="flex-start"
                   >
                     <IconButton
-                      aria-label="facebook"
+                      aria-label="linkedin"
                       variant="ghost"
                       size="lg"
                       isRound={true}
                       _hover={{ bg: "#0D74FF" }}
                       icon={<BsLinkedin size="28px" />}
+                      onClick={() => window.open("https://www.linkedin.com/in/ac383/")}
                     />
                     <IconButton
                       aria-label="github"
@@ -108,14 +110,16 @@ export default function Contact() {
                       isRound={true}
                       _hover={{ bg: "#0D74FF" }}
                       icon={<BsGithub size="28px" />}
+                      onClick={() => window.open("https://github.com/avc0021")}
                     />
                     <IconButton
-                      aria-label="discord"
+                      aria-label="instagram"
                       variant="ghost"
                       size="lg"
                       isRound={true}
                       _hover={{ bg: "#0D74FF" }}
                       icon={<ImInstagram size="28px" />}
+                      onClick={() => window.open("https://www.instagram.com/_ayejayz_/")}
                     />
                   </HStack>
                 </Box>
