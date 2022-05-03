@@ -3,9 +3,6 @@ import { FaSun, FaMoon } from "react-icons/fa";
 import React from "react";
 import { useColorMode } from "@chakra-ui/color-mode";
 import { Flex, VStack, Box, Spacer } from "@chakra-ui/layout";
-import { Image } from "@chakra-ui/image";
-
-import { ACLogo } from "../../assets/images/ac.png";
 
 function Navbar({ currentPage, handlePageChange }) {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -13,7 +10,6 @@ function Navbar({ currentPage, handlePageChange }) {
 
   return (
     <VStack>
-      
       <Flex
         align="center"
         justify="right"
@@ -23,7 +19,7 @@ function Navbar({ currentPage, handlePageChange }) {
         p={8}
         bg={["primary.500"]}
       >
-         
+        <Spacer></Spacer>
         <Box p="2">
           <a
             href="#about"
@@ -66,16 +62,16 @@ function Navbar({ currentPage, handlePageChange }) {
             Contact
           </a>
         </Box>
-        <IconButton
-          colorScheme="teal"
-          variant="outline"
-          ml={8}
-          boxSize="47px"
-          icon={isDark ? <FaSun /> : <FaMoon />}
-          isRound="true"
-          onClick={toggleColorMode}
-        ></IconButton>
       </Flex>
+      <IconButton
+        colorScheme="teal"
+        variant="outline"
+        ml={8}
+        boxSize="47px"
+        icon={isDark ? <FaSun /> : <FaMoon />}
+        isRound="true"
+        onClick={toggleColorMode}
+      ></IconButton>
     </VStack>
   );
 }

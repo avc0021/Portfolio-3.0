@@ -9,7 +9,7 @@ import {
   Button,
   useColorModeValue,
 } from "@chakra-ui/react";
-//import { BsGithub } from "react-icons/bs";
+import { BsGithub } from "react-icons/bs";
 
 export default function Project1() {
   return (
