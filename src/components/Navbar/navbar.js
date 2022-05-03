@@ -63,15 +63,17 @@ function Navbar({ currentPage, handlePageChange }) {
           </a>
         </Box>
       </Flex>
+      <Box>
       <IconButton
         colorScheme="teal"
         variant="outline"
-        ml={8}
+        mb={8}
         boxSize="47px"
         icon={isDark ? <FaSun /> : <FaMoon />}
         isRound="true"
         onClick={toggleColorMode}
       ></IconButton>
+      </Box>
     </VStack>
   );
 }
