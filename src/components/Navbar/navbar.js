@@ -1,9 +1,11 @@
 import { IconButton } from "@chakra-ui/button";
-import { FaSun, FaMoon } from "react-icons/fa";
+import { ImSun } from "react-icons/im";
+import { BsMoonStars } from "react-icons/bs"
 import React from "react";
 import { useColorMode } from "@chakra-ui/color-mode";
 import { Flex, VStack, Box, Spacer } from "@chakra-ui/layout";
 //import { textDecoration } from "@chakra-ui/react";
+
 
 function Navbar({ currentPage, handlePageChange }) {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -66,11 +68,11 @@ function Navbar({ currentPage, handlePageChange }) {
       </Flex>
       <Box>
         <IconButton
-          colorScheme="teal"
+          colorScheme="black"
           variant="outline"
-          mb={8}
+          mb={18}
           boxSize="47px"
-          icon={isDark ? <FaSun /> : <FaMoon />}
+          icon={isDark ? <ImSun /> : <BsMoonStars />}
           isRound="true"
           onClick={toggleColorMode}
         ></IconButton>

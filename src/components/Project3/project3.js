@@ -1,16 +1,13 @@
 import React from "react";
-import { Image } from "@chakra-ui/image";
+//import { Image } from "@chakra-ui/image";
 import {
   Box,
-  IconButton,
   Heading,
   Text,
   Stack,
   Button,
-  useColorModeValue,
 } from "@chakra-ui/react";
 import { BsGithub, BsFilePlay } from "react-icons/bs";
-import { GrDeploy } from "react-icons/gr";
 import BudgetTracker from "../../assets/images/btracker.png";
 
 export default function Project3() {

@@ -36,7 +36,7 @@ function App() {
     <div
       className="App"
       style={{
-        background: "linear-gradient(rgb(143,143,143),transparent)",
+        background: "linear-gradient(rgb(143,143,143),100)",
       }}
     >
       <Navbar currentPage={currentPage} handlePageChange={handlePageChange} />

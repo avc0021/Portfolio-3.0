@@ -12,7 +12,7 @@ function Resume() {
           borderRadius="lg"
           w={"full"}
           maxW={"445px"}
-          p={10}
+          p={70}
         >
           <Text
             fontSize="4xl"
