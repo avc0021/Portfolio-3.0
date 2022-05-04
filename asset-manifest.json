@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/portfolio-3.0/static/css/main.e6c13ad2.css",
+    "main.js": "/portfolio-3.0/static/js/main.2546d878.js",
+    "static/media/mynightsky.png": "/portfolio-3.0/static/media/mynightsky.639016cc54e8873945f1.png",
+    "static/media/DeepThoughts2.png": "/portfolio-3.0/static/media/DeepThoughts2.17efeef1188a7e8bb2f7.png",
+    "static/media/btracker.png": "/portfolio-3.0/static/media/btracker.b8fec3cfdef5ecb46930.png",
+    "index.html": "/portfolio-3.0/index.html",
+    "main.e6c13ad2.css.map": "/portfolio-3.0/static/css/main.e6c13ad2.css.map",
+    "main.2546d878.js.map": "/portfolio-3.0/static/js/main.2546d878.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.2546d878.js"
+  ]
+}
