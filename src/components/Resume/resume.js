@@ -1,5 +1,6 @@
 import React from "react";
 import { VStack, Link, Box, Text, Flex } from "@chakra-ui/layout";
+import { RiExternalLinkLine } from "react-icons/ri";
 import { Button } from "@chakra-ui/react";
 
 function Resume() {
@@ -32,7 +33,8 @@ function Resume() {
               }
             >
               <Button variant="solid" bg="#647D94" color="white" _hover={{}}>
-                Download Resume
+                <RiExternalLinkLine size="21px" color="white" />{" "}
+                <Text ml={"8px"}>Full Resume</Text>
               </Button>
             </Link>
           </Text>

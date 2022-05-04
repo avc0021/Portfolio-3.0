@@ -74,6 +74,7 @@ function Navbar({ currentPage, handlePageChange }) {
           boxSize="47px"
           icon={isDark ? <ImSun /> : <BsMoonStars />}
           isRound="true"
+          
           onClick={toggleColorMode}
         ></IconButton>
       </Box>
