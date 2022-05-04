@@ -28,7 +28,7 @@ export default function Project4() {
         </Box>
         <Stack mt={3}>
           <Heading
-            color={useColorModeValue("gray.700", "white")}
+            color="white"
             fontSize={"2xl"}
             fontFamily={"body"}
           >
