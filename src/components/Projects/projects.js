@@ -8,10 +8,7 @@ import {
   Box,
   Flex,
   VStack,
-  Text,
-  Stack,
-  Button,
-  useColorModeValue,
+  Text
 } from "@chakra-ui/react";
 
 function Projects() {
