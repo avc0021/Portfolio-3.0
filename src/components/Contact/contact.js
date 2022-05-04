@@ -37,7 +37,6 @@ export default function Contact() {
               <WrapItem>
                 <Box>
                   <Heading>
-                    
                     <Text
                       fontSize="4xl"
                       fontWeight="bold"
@@ -61,7 +60,7 @@ export default function Contact() {
                         _hover={{ border: "2px solid #1C6FEB" }}
                         leftIcon={<MdPhone color="#1970F1" size="20px" />}
                       >
-                        2103830681
+                        (210) 383-0681
                       </Button>
                       <Button
                         size="md"
@@ -71,9 +70,8 @@ export default function Contact() {
                         color="white"
                         _hover={{ border: "2px solid #1C6FEB" }}
                         leftIcon={<MdEmail color="#1970F1" size="20px" />}
-                        
                       >
-                        <a href = "mailto:avc0021@gmail.com">AVC0021@GMAIL.COM</a>
+                        <a href="mailto:avc0021@gmail.com">AVC0021@GMAIL.COM</a>
                       </Button>
                       <Button
                         size="md"
@@ -84,7 +82,7 @@ export default function Contact() {
                         _hover={{ border: "2px solid #1C6FEB" }}
                         leftIcon={<MdLocationOn color="#1970F1" size="20px" />}
                       >
-                        San Antonio,Tx
+                        San Antonio, Texas
                       </Button>
                     </VStack>
                   </Box>
@@ -101,7 +99,9 @@ export default function Contact() {
                       isRound={true}
                       _hover={{ bg: "#0D74FF" }}
                       icon={<BsLinkedin size="28px" />}
-                      onClick={() => window.open("https://www.linkedin.com/in/ac383/")}
+                      onClick={() =>
+                        window.open("https://www.linkedin.com/in/ac383/")
+                      }
                     />
                     <IconButton
                       aria-label="github"
@@ -119,7 +119,9 @@ export default function Contact() {
                       isRound={true}
                       _hover={{ bg: "#0D74FF" }}
                       icon={<ImInstagram size="28px" />}
-                      onClick={() => window.open("https://www.instagram.com/_ayejayz_/")}
+                      onClick={() =>
+                        window.open("https://www.instagram.com/_ayejayz_/")
+                      }
                     />
                   </HStack>
                 </Box>

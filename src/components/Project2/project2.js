@@ -9,6 +9,7 @@ import {
   Button,
   useColorModeValue,
 } from "@chakra-ui/react";
+import { BsGithub, BsFilePlay } from "react-icons/bs";
 import Sky from "../../assets/images/mynightsky.png";
 
 export default function Project2() {
@@ -27,11 +28,7 @@ export default function Project2() {
           <img objectFit="cover" src={Sky} alt="My Night Sky" />
         </Box>
         <Stack mt={3}>
-          <Heading
-            color={useColorModeValue("gray.700", "white")}
-            fontSize={"2xl"}
-            fontFamily={"body"}
-          >
+          <Heading color="white" fontSize={"2xl"} fontFamily={"body"}>
             My Night Sky
           </Heading>
           <Text color={"gray.500"}>
@@ -59,7 +56,8 @@ export default function Project2() {
               window.open("https://coevpen.github.io/my-night-sky/")
             }
           >
-            Demo
+            <BsFilePlay size="21px" color="white" />{" "}
+            <Text ml={"8px"}>Deploy</Text>
           </Button>
           <Button
             flex={1}
@@ -80,7 +78,7 @@ export default function Project2() {
               window.open("https://github.com/coevpen/my-night-sky")
             }
           >
-            Github
+            <BsGithub size="20px" /> <Text ml={"10px"}>GitHub</Text>
           </Button>
         </Stack>
       </Box>

@@ -33,7 +33,12 @@ function App() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <div className="App">
+    <div
+      className="App"
+      style={{
+        background: "linear-gradient(rgb(143,143,143),transparent)",
+      }}
+    >
       <Navbar currentPage={currentPage} handlePageChange={handlePageChange} />
       {renderPage()}
     </div>

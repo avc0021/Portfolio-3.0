@@ -1,14 +1,13 @@
 import React from "react";
-import { Image } from "@chakra-ui/image";
+//import { Image } from "@chakra-ui/image";
 import {
   Box,
-  Link,
   Heading,
   Text,
   Stack,
   Button,
-  useColorModeValue,
 } from "@chakra-ui/react";
+import { BsGithub, BsFilePlay } from "react-icons/bs";
 import BudgetTracker from "../../assets/images/btracker.png";
 
 export default function Project3() {
@@ -27,17 +26,13 @@ export default function Project3() {
           <img src={BudgetTracker} alt="My Night Sky" />
         </Box>
         <Stack mt={3}>
-          <Heading
-            color={useColorModeValue("gray.700", "white")}
-            fontSize={"2xl"}
-            fontFamily={"body"}
-          >
+          <Heading color="white" fontSize={"2xl"} fontFamily={"body"}>
             Budget Tracker
           </Heading>
           <Text color={"gray.500"}>
-            This app allows the user to track withdrawals and deposits
-            with or without data/internet connection. This will allow the user
-            to accurately balance account.
+            This app allows the user to track withdrawals and deposits with or
+            without data/internet connection. This will allow the user to
+            accurately balance account.
           </Text>
         </Stack>
         <Stack mt={8} direction={"row"} spacing={4}>
@@ -60,7 +55,7 @@ export default function Project3() {
               window.open("https://stormy-headland-24832.herokuapp.com/")
             }
           >
-            Demo
+            <BsFilePlay size="21px" color="white" /> <Text ml={"8px"}>Deploy</Text>
           </Button>
           <Button
             flex={1}
@@ -81,7 +76,7 @@ export default function Project3() {
               window.open("https://github.com/avc0021/Budget-Tracker")
             }
           >
-            Github
+            <BsGithub size="20px" /> <Text ml={"10px"}>GitHub</Text>
           </Button>
         </Stack>
       </Box>

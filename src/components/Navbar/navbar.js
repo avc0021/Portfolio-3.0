@@ -1,8 +1,11 @@
 import { IconButton } from "@chakra-ui/button";
-import { FaSun, FaMoon } from "react-icons/fa";
+import { ImSun } from "react-icons/im";
+import { BsMoonStars } from "react-icons/bs"
 import React from "react";
 import { useColorMode } from "@chakra-ui/color-mode";
 import { Flex, VStack, Box, Spacer } from "@chakra-ui/layout";
+//import { textDecoration } from "@chakra-ui/react";
+
 
 function Navbar({ currentPage, handlePageChange }) {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -20,7 +23,7 @@ function Navbar({ currentPage, handlePageChange }) {
         bg={["primary.500"]}
       >
         <Spacer></Spacer>
-        <Box p="2">
+        <Box p="2" _hover={{ textDecoration: "underline" }}>
           <a
             href="#about"
             onClick={() => handlePageChange("About")}
@@ -29,7 +32,7 @@ function Navbar({ currentPage, handlePageChange }) {
             About Me
           </a>
         </Box>
-        <Box p="2">
+        <Box p="2" _hover={{ textDecoration: "underline" }}>
           <a
             href="#resume"
             onClick={() => handlePageChange("Resume")}
@@ -40,7 +43,7 @@ function Navbar({ currentPage, handlePageChange }) {
             Resume
           </a>
         </Box>
-        <Box p="2">
+        <Box p="2" _hover={{ textDecoration: "underline" }}>
           <a
             href="#projects"
             onClick={() => handlePageChange("Projects")}
@@ -51,7 +54,7 @@ function Navbar({ currentPage, handlePageChange }) {
             Projects
           </a>
         </Box>
-        <Box p="2">
+        <Box p="2" _hover={{ textDecoration: "underline" }}>
           <a
             href="#contact"
             onClick={() => handlePageChange("Contact")}
@@ -64,15 +67,16 @@ function Navbar({ currentPage, handlePageChange }) {
         </Box>
       </Flex>
       <Box>
-      <IconButton
-        colorScheme="teal"
-        variant="outline"
-        mb={8}
-        boxSize="47px"
-        icon={isDark ? <FaSun /> : <FaMoon />}
-        isRound="true"
-        onClick={toggleColorMode}
-      ></IconButton>
+        <IconButton
+          colorScheme="black"
+          variant="outline"
+          mb={18}
+          boxSize="47px"
+          icon={isDark ? <ImSun /> : <BsMoonStars />}
+          isRound="true"
+          
+          onClick={toggleColorMode}
+        ></IconButton>
       </Box>
     </VStack>
   );

@@ -21,7 +21,7 @@ function Projects() {
         <Text
           fontSize="4xl"
           fontWeight="bold"
-          bgGradient="linear(to-r, cyan.400, blue.500, purple.600)"
+          bgGradient="linear(to-r, cyan.600, blue.500, purple.600)"
           bgClip="text"
           alignSelf="center"
         >

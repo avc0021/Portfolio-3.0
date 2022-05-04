@@ -1,15 +1,7 @@
 import React from "react";
 import { Image } from "@chakra-ui/image";
-import {
-  Box,
-  Link,
-  Heading,
-  Text,
-  Stack,
-  Button,
-  useColorModeValue,
-} from "@chakra-ui/react";
-import { BsGithub } from "react-icons/bs";
+import { Box, Heading, Text, Stack, Button } from "@chakra-ui/react";
+import { BsGithub, BsFilePlay } from "react-icons/bs";
 
 export default function Project1() {
   return (
@@ -31,11 +23,7 @@ export default function Project1() {
           />
         </Box>
         <Stack mt={3}>
-          <Heading
-            color={"white"}
-            fontSize={"2xl"}
-            fontFamily={"body"}
-          >
+          <Heading color={"white"} fontSize={"2xl"} fontFamily={"body"}>
             Parachute Play
           </Heading>
           <Text color={"gray.500"}>
@@ -63,7 +51,8 @@ export default function Project1() {
               window.open("https://jam-group-project.herokuapp.com/")
             }
           >
-            Demo
+            <BsFilePlay size="21px" color="white" />{" "}
+            <Text ml={"8px"}>Deploy</Text>
           </Button>
           <Button
             flex={1}
@@ -84,7 +73,7 @@ export default function Project1() {
               window.open("https://github.com/jessebubble/parachute-play")
             }
           >
-            GitHub
+            <BsGithub size="20px" /> <Text ml={"10px"}>GitHub</Text>
           </Button>
         </Stack>
       </Box>
