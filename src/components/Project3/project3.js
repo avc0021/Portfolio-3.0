@@ -9,7 +9,8 @@ import {
   Button,
   useColorModeValue,
 } from "@chakra-ui/react";
-import { BsGithub } from "react-icons/bs";
+import { BsGithub, BsFilePlay } from "react-icons/bs";
+import { GrDeploy } from "react-icons/gr";
 import BudgetTracker from "../../assets/images/btracker.png";
 
 export default function Project3() {
@@ -28,17 +29,13 @@ export default function Project3() {
           <img src={BudgetTracker} alt="My Night Sky" />
         </Box>
         <Stack mt={3}>
-          <Heading
-            color= "white"
-            fontSize={"2xl"}
-            fontFamily={"body"}
-          >
+          <Heading color="white" fontSize={"2xl"} fontFamily={"body"}>
             Budget Tracker
           </Heading>
           <Text color={"gray.500"}>
-            This app allows the user to track withdrawals and deposits
-            with or without data/internet connection. This will allow the user
-            to accurately balance account.
+            This app allows the user to track withdrawals and deposits with or
+            without data/internet connection. This will allow the user to
+            accurately balance account.
           </Text>
         </Stack>
         <Stack mt={8} direction={"row"} spacing={4}>
@@ -61,9 +58,9 @@ export default function Project3() {
               window.open("https://stormy-headland-24832.herokuapp.com/")
             }
           >
-            Demo
+            <BsFilePlay size="21px" color="white" /> <Text ml={"8px"}>Deploy</Text>
           </Button>
-          <IconButton
+          <Button
             flex={1}
             fontSize={"sm"}
             rounded={"full"}
@@ -78,13 +75,12 @@ export default function Project3() {
             _focus={{
               bg: "blue.500",
             }}
-            
             onClick={() =>
               window.open("https://github.com/avc0021/Budget-Tracker")
             }
           >
-           <BsGithub  size="28px" /> Github
-          </IconButton>
+            <BsGithub size="20px" /> <Text ml={"10px"}>GitHub</Text>
+          </Button>
         </Stack>
       </Box>
     </Stack>
