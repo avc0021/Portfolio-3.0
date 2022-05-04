@@ -11,17 +11,16 @@ function Logo() {
     <Flex mt={8} direction={"column"} spacing={4}>
       <Box>
         <Center>
-        <Image
-          height={"6vh"}
-          
-          mb={"80px"}
-          alignSelf="center"
-          src={
-            "https://see.fontimg.com/api/renderfont4/anra/eyJyIjoiZnMiLCJoIjo3NywidyI6MTUwMCwiZnMiOjUxLCJmZ2MiOiIjQUZBRkFGIiwiYmdjIjoiI0Y5RjlGOSIsInQiOjF9/QWRhbSBDYXN0cm8/nixies-regular.png"
-          }
-          alt="profile pic adam"
-          onClick={() => window.open("https://github.com/avc0021")}
-        />
+          <Image
+            height={"6vh"}
+            mb={"80px"}
+            alignSelf="center"
+            src={
+              "https://see.fontimg.com/api/renderfont4/nRGPV/eyJyIjoiZnMiLCJoIjoxMDgsInciOjE1MDAsImZzIjo3MiwiZmdjIjoiIzNGOEVDMSIsImJnYyI6IiNEOEQ4REEiLCJ0IjoxfQ/QWRhbSBDYXN0cm8/bontang.png"
+            }
+            alt="profile pic adam"
+            onClick={() => window.open("https://github.com/avc0021")}
+          />
         </Center>
       </Box>
     </Flex>

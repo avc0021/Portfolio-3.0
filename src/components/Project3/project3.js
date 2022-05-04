@@ -2,13 +2,14 @@ import React from "react";
 import { Image } from "@chakra-ui/image";
 import {
   Box,
-  Link,
+  IconButton,
   Heading,
   Text,
   Stack,
   Button,
   useColorModeValue,
 } from "@chakra-ui/react";
+import { BsGithub } from "react-icons/bs";
 import BudgetTracker from "../../assets/images/btracker.png";
 
 export default function Project3() {
@@ -28,7 +29,7 @@ export default function Project3() {
         </Box>
         <Stack mt={3}>
           <Heading
-            color={useColorModeValue("gray.700", "white")}
+            color= "white"
             fontSize={"2xl"}
             fontFamily={"body"}
           >
@@ -62,7 +63,7 @@ export default function Project3() {
           >
             Demo
           </Button>
-          <Button
+          <IconButton
             flex={1}
             fontSize={"sm"}
             rounded={"full"}
@@ -77,12 +78,13 @@ export default function Project3() {
             _focus={{
               bg: "blue.500",
             }}
+            
             onClick={() =>
               window.open("https://github.com/avc0021/Budget-Tracker")
             }
           >
-            Github
-          </Button>
+           <BsGithub  size="28px" /> Github
+          </IconButton>
         </Stack>
       </Box>
     </Stack>

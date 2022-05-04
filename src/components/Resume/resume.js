@@ -37,7 +37,7 @@ function Resume() {
             </Link>
           </Text>
 
-          <Text fontWeight="bold" color="white" as='u'>
+          <Text fontWeight="bold" color="white" as="u">
             Front-End Proficiences
           </Text>
 
@@ -48,8 +48,10 @@ function Resume() {
           <ul>React</ul>
           <ul>Bootstrap</ul>
           <ul>Bulma</ul>
+          <ul>Chakra</ul>
 
-          <Text fontWeight="bold" color="white" as='u'>
+          <br></br>
+          <Text fontWeight="bold" color="white" as="u">
             Back-End Proficiences
           </Text>
 
@@ -59,8 +61,8 @@ function Resume() {
           <ul>MySql, Sequelize</ul>
           <ul>MonogoDB, Mongoose</ul>
           <ul>REST</ul>
-
-          <Text fontWeight="bold" color="white" as='u'>
+          <br></br>
+          <Text fontWeight="bold" color="white" as="u">
             Tools
           </Text>
 
