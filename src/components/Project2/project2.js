@@ -1,13 +1,10 @@
 import React from "react";
-import { Image } from "@chakra-ui/image";
 import {
   Box,
-  Link,
   Heading,
   Text,
   Stack,
   Button,
-  useColorModeValue,
 } from "@chakra-ui/react";
 import { BsGithub, BsFilePlay } from "react-icons/bs";
 import Sky from "../../assets/images/mynightsky.png";

@@ -8,7 +8,6 @@ import Home from "./components/Home/home.js";
 import Resume from "./components/Resume/resume.js";
 //import DarkModeSwitch from "./components/DarkModeSwitch/darkmodeswitch.js";
 import Contact from "./components/Contact/contact.js";
-import Logo from "./components/Logo/logo";
 //import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 
 function App() {
