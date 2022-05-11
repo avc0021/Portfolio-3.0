@@ -1,4 +1,4 @@
-import { Flex, Box, Text } from "@chakra-ui/layout";
+import { Flex, Box } from "@chakra-ui/layout";
 //import AdamLogo from "../../assets/images/"
 import { Image } from "@chakra-ui/image";
 import { Center } from "@chakra-ui/react";
@@ -8,7 +8,7 @@ function Logo() {
   // const isDark = colorMode === "dark";
 
   return (
-    <Flex mt={8} direction={"column"} spacing={4}>
+    <Flex mt={8} direction={"column"} spacing={4}> 
       <Box>
         <Center>
           <Image

@@ -14,12 +14,11 @@ Also links for my social accounts as well as a link to full resume.
 
 # Install
 The following needs to be installed to run this application.
-### npm install
-### npm install react-router-dom -g --save
+npm install
 
 # Usage
 See deployed link below:
-
+https://avc0021.github.io/Portfolio-3.0/
 
 # Contributing
 Adam Castro

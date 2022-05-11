@@ -3,7 +3,7 @@ import Project1 from "../Project1/project1.js";
 import Project2 from "../Project2/project2.js";
 import Project3 from "../Project3/project3.js";
 import Project4 from "../Project4/project4.js";
-//import Project5 from '../Project5'
+import Project5 from "../Project5/project5.js";
 import {
   Box,
   Flex,
@@ -35,6 +35,9 @@ function Projects() {
         </Box>
         <Box>
           <Project4 />
+        </Box>
+        <Box>
+          <Project5 />
         </Box>
       </Flex>
     </VStack>
