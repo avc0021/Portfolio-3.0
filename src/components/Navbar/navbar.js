@@ -15,12 +15,14 @@ function Navbar({ currentPage, handlePageChange }) {
     <VStack>
       <Flex
         align="center"
-        justify="right"
-        wrap="wrap"
+        pos="relative"
+        justify="center"
+        boxSize="full"
         w="100%"
         mb={8}
         p={8}
-        bg={["primary.500"]}
+        pb="30px"
+        backgroundColor="#344c5c"
       >
         <Spacer></Spacer>
         <Box p="2" _hover={{ textDecoration: "underline" }}>
@@ -83,3 +85,4 @@ function Navbar({ currentPage, handlePageChange }) {
 }
 
 export default Navbar;
+

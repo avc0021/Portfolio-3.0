@@ -29,9 +29,6 @@ function App() {
   return (
     <div
       className="App"
-      style={{
-        background: "linear-gradient(rgb(143,143,143),transparent)",
-      }}
     >
       <Navbar currentPage={currentPage} handlePageChange={handlePageChange} />
       {renderPage()}
