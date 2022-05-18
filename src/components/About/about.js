@@ -1,10 +1,10 @@
 import React from "react";
-//import coverImage from "../../assets/ac1/aj.jpg";
+import coverImage from "../../assets/images/aboutimg.png";
 import { VStack, Flex, Box, Text } from "@chakra-ui/layout";
 import { useColorMode } from "@chakra-ui/color-mode";
 import { Image } from "@chakra-ui/image";
 import { Center } from "@chakra-ui/react";
-import Logo from "../Logo/logo.js";
+//import Logo from "../Logo/logo.js";
 function About() {
   const { colorMode } = useColorMode();
   const isDark = colorMode === "dark";
@@ -13,19 +13,16 @@ function About() {
     <VStack p={5}>
       <Flex mt={8} direction={"column"} spacing={4}>
         <Box>
-          <Logo></Logo>
           <Center>
             <Image
-              height={"30vh"}
-              borderRadius="full"
+              height={{ sm: 60, lg: 560 }}
+              width={{ sm: 90, lg: 590 }}
+              borderRadius="lg"
               mb={"80px"}
               align="center"
-              src="https://ca.slack-edge.com/T02GXRVP58D-U02HW6NHXTP-6f10994cffea-512"
+              src={coverImage}
               alt="profile pic adam"
               onClick={() => window.open("https://github.com/avc0021")}
-              boxShadow={
-                "0px 15px 15px 5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)"
-              }
             />
           </Center>
           <Box
@@ -33,9 +30,7 @@ function About() {
             borderRadius="lg"
             m={{ sm: 4, md: 16, lg: 10 }}
             p={10}
-            boxShadow={
-              "0px 12px 10px rgb(0 0 0 / 48%)"
-            }
+            boxShadow={"0px 12px 10px rgb(0 0 0 / 48%)"}
           >
             <Text
               fontSize="4xl"
