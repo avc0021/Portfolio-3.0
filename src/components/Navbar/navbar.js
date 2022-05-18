@@ -18,10 +18,11 @@ function Navbar({ currentPage, handlePageChange }) {
         justify="center"
         boxSize="full"
         w="100%"
-        mb={8}
+        mb={4}
         p={8}
-        pb="30px"
+        pb="10px"
         backgroundColor="#344c5c"
+        color={'white'}
       >
         <Box>
           <IconButton
@@ -36,44 +37,22 @@ function Navbar({ currentPage, handlePageChange }) {
         </Box>
         <Spacer></Spacer>
         <Box p="2" _hover={{ textDecoration: "underline" }}>
-          <a
-            href="#about"
-            onClick={() => handlePageChange("About")}
-            className={currentPage === "About" ? "nav-link active" : "nav-link"}
-          >
+          <a href="#about" onClick={() => handlePageChange("About")}>
             About Me
           </a>
         </Box>
         <Box p="2" _hover={{ textDecoration: "underline" }}>
-          <a
-            href="#resume"
-            onClick={() => handlePageChange("Resume")}
-            className={
-              currentPage === "Resume" ? "nav-link active" : "nav-link"
-            }
-          >
+          <a href="#resume" onClick={() => handlePageChange("Resume")}>
             Resume
           </a>
         </Box>
         <Box p="2" _hover={{ textDecoration: "underline" }}>
-          <a
-            href="#projects"
-            onClick={() => handlePageChange("Projects")}
-            className={
-              currentPage === "Projects" ? "nav-link active" : "nav-link"
-            }
-          >
+          <a href="#projects" onClick={() => handlePageChange("Projects")}>
             Projects
           </a>
         </Box>
         <Box p="2" _hover={{ textDecoration: "underline" }}>
-          <a
-            href="#contact"
-            onClick={() => handlePageChange("Contact")}
-            className={
-              currentPage === "Contact" ? "nav-link active" : "nav-link"
-            }
-          >
+          <a href="#contact" onClick={() => handlePageChange("Contact")}>
             Contact
           </a>
         </Box>
