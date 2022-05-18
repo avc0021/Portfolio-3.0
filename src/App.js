@@ -4,8 +4,7 @@ import Projects from "./components/Projects/projects.js";
 import About from "./components/About/about.js";
 import Resume from "./components/Resume/resume.js";
 import Contact from "./components/Contact/contact.js";
-import './App.css';
-
+import "./App.css";
 
 function App() {
   const [currentPage, setCurrentPage] = useState("About");
@@ -26,9 +25,7 @@ function App() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <div
-
-    >
+    <div>
       <Navbar currentPage={currentPage} handlePageChange={handlePageChange} />
       {renderPage()}
     </div>

@@ -17,7 +17,9 @@ export default function Project3() {
         maxW={"445px"}
         w={"full"}
         bg={"#344c5c"}
-        boxShadow={"2xl"}
+        boxShadow={
+          "0px 12px 10px rgb(0 0 0 / 48%)"
+        }
         rounded={"md"}
         p={10}
         overflow={"hidden"}

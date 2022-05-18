@@ -31,6 +31,9 @@ export default function Contact() {
           borderRadius="lg"
           m={{ sm: 4, md: 16, lg: 10 }}
           p={{ sm: 5, md: 5, lg: 16 }}
+          boxShadow={
+            "0px 12px 10px rgb(0 0 0 / 48%)"
+          }
         >
           <Box p={4}>
             <Wrap spacing={{ base: 20, sm: 3, md: 5, lg: 20 }}>

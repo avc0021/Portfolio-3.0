@@ -23,18 +23,24 @@ function About() {
               src="https://ca.slack-edge.com/T02GXRVP58D-U02HW6NHXTP-6f10994cffea-512"
               alt="profile pic adam"
               onClick={() => window.open("https://github.com/avc0021")}
+              boxShadow={
+                "0px 15px 15px 5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)"
+              }
             />
           </Center>
           <Box
             bg="#344c5c"
             borderRadius="lg"
             m={{ sm: 4, md: 16, lg: 10 }}
-            p={ 10 }
+            p={10}
+            boxShadow={
+              "0px 12px 10px rgb(0 0 0 / 48%)"
+            }
           >
             <Text
               fontSize="4xl"
               fontWeight="bold"
-              bgGradient="linear(to-r, blue.500, green.400)"
+              bgGradient="linear(to-r, cyan.500, blue.500)"
               bgClip="text"
               mb={"30px"}
             >

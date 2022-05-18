@@ -15,15 +15,6 @@ function Projects() {
   return (
     <VStack>
       <Flex mt={8} direction={"column"} spacing={4}>
-        <Text
-          fontSize="4xl"
-          fontWeight="bold"
-          bgGradient="linear(to-r, cyan.600, blue.500, purple.600)"
-          bgClip="text"
-          alignSelf="center"
-        >
-          Projects
-        </Text>
         <Box>
           <Project1 />
         </Box>
