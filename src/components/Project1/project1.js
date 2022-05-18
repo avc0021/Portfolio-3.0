@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  Box,
-  Heading,
-  Text,
-  Stack,
-  Button,
-} from "@chakra-ui/react";
+import { Box, Heading, Text, Stack, Button } from "@chakra-ui/react";
 import { BsGithub, BsFilePlay } from "react-icons/bs";
 import Sky from "../../assets/images/mynightsky.png";
 
@@ -16,11 +10,21 @@ export default function Project2() {
         maxW={"445px"}
         w={"full"}
         bg={"#344c5c"}
-        boxShadow={"2xl"}
         rounded={"md"}
         p={10}
         overflow={"hidden"}
+        boxShadow={"0px 12px 10px rgb(0 0 0 / 48%)"}
       >
+        <Text
+          fontSize="4xl"
+          fontWeight="bold"
+          bgGradient="linear(to-r, cyan.500, blue.500)"
+          bgClip="text"
+          align="center"
+          paddingBottom={20}
+        >
+          Projects
+        </Text>
         <Box h={"140px"} bg={"gray.100"} mt={-6} mb={90} pos={"relative"}>
           <img objectFit="cover" src={Sky} alt="My Night Sky" />
         </Box>

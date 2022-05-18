@@ -11,14 +11,18 @@ function Resume() {
           bg="#344c5c"
           color="white"
           borderRadius="lg"
+          boxShadow={
+            "0px 12px 10px rgb(0 0 0 / 48%)"
+          }
           w={"full"}
           maxW={"445px"}
           p={70}
+          margin={10}
         >
           <Text
             fontSize="4xl"
             fontWeight="bold"
-            bgGradient="linear(to-r, cyan.400, blue.500, purple.600)"
+            bgGradient="linear(to-r, cyan.500, blue.500)"
             bgClip="text"
             mb="5"
           >

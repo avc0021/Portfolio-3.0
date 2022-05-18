@@ -31,6 +31,9 @@ export default function Contact() {
           borderRadius="lg"
           m={{ sm: 4, md: 16, lg: 10 }}
           p={{ sm: 5, md: 5, lg: 16 }}
+          boxShadow={
+            "0px 12px 10px rgb(0 0 0 / 48%)"
+          }
         >
           <Box p={4}>
             <Wrap spacing={{ base: 20, sm: 3, md: 5, lg: 20 }}>
@@ -50,7 +53,7 @@ export default function Contact() {
                     Fill up the form below to contact
                   </Text>
                   <Box py={{ base: 5, sm: 5, md: 8, lg: 10 }}>
-                    <VStack pl={0} spacing={3} alignItems="flex-start">
+                    <VStack pl={8} spacing={3} alignItems="flex-start">
                       <Button
                         size="md"
                         height="48px"
@@ -91,6 +94,7 @@ export default function Contact() {
                     spacing={5}
                     px={5}
                     alignItems="flex-start"
+                    pl={12}
                   >
                     <IconButton
                       aria-label="linkedin"
