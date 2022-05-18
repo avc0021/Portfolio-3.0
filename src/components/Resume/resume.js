@@ -17,6 +17,7 @@ function Resume() {
           w={"full"}
           maxW={"445px"}
           p={70}
+          margin={10}
         >
           <Text
             fontSize="4xl"
