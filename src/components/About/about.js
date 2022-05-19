@@ -15,8 +15,8 @@ function About() {
         <Box>
           <Center>
             <Image
-              height={{ sm: 60, lg: 560 }}
-              width={{ sm: 90, lg: 590 }}
+              height={{ sm: 60, md:370, lg: 560 }}
+              width={{ sm: 90, md:370, lg: 590 }}
               borderRadius="lg"
               mb={"80px"}
               align="center"
