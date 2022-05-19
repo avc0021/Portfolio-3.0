@@ -30,7 +30,7 @@ export default function Contact() {
           color="white"
           borderRadius="lg"
           m={{ sm: 4, md: 16, lg: 10 }}
-          p={{ sm: 5, md: 5, lg: 16 }}
+          p={{ sm: 5, md: 5, lg: 34 }}
           boxShadow={
             "0px 12px 10px rgb(0 0 0 / 48%)"
           }
@@ -38,18 +38,19 @@ export default function Contact() {
           <Box p={4}>
             <Wrap spacing={{ base: 20, sm: 3, md: 5, lg: 20 }}>
               <WrapItem>
-                <Box>
+                <Box align={"center"}>
                   <Heading>
                     <Text
                       fontSize="4xl"
                       fontWeight="bold"
                       bgGradient="linear(to-r, cyan.500, blue.500)"
                       bgClip="text"
+                      
                     >
                       Contact
                     </Text>
                   </Heading>
-                  <Text mt={{ sm: 3, md: 3, lg: 5 }} color="gray.500">
+                  <Text mt={{ sm: 3, md: 3, lg: 5 }} px={5}color="gray.500">
                     Fill up the form below to contact
                   </Text>
                   <Box py={{ base: 5, sm: 5, md: 8, lg: 10 }}>

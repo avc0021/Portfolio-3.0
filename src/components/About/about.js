@@ -1,5 +1,5 @@
 import React from "react";
-import coverImage from "../../assets/images/aboutimg.png";
+import coverImage from "../../assets/images/bluelogo.png";
 import { VStack, Flex, Box, Text } from "@chakra-ui/layout";
 import { useColorMode } from "@chakra-ui/color-mode";
 import { Image } from "@chakra-ui/image";
@@ -15,8 +15,8 @@ function About() {
         <Box>
           <Center>
             <Image
-              height={{ sm: 60, lg: 560 }}
-              width={{ sm: 90, lg: 590 }}
+              height={{ sm: 60, md:370, lg: 560 }}
+              width={{ sm: 90, md:370, lg: 590 }}
               borderRadius="lg"
               mb={"80px"}
               align="center"
