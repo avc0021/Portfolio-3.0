@@ -7,8 +7,7 @@ import Project5 from "../Project5/project5.js";
 import {
   Box,
   Flex,
-  VStack,
-  Text
+  VStack
 } from "@chakra-ui/react";
 
 function Projects() {
