@@ -1,5 +1,5 @@
 import React from "react";
-import coverImage from "../../assets/images/aboutimg.png";
+import coverImage from "../../assets/images/bluelogo.png";
 import { VStack, Flex, Box, Text } from "@chakra-ui/layout";
 import { useColorMode } from "@chakra-ui/color-mode";
 import { Image } from "@chakra-ui/image";
