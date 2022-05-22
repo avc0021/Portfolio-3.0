@@ -4,6 +4,7 @@ import Projects from "./components/Projects/projects.js";
 import About from "./components/About/about.js";
 import Resume from "./components/Resume/resume.js";
 import Contact from "./components/Contact/contact.js";
+import { VStack } from "@chakra-ui/layout";
 import "./App.css";
 
 function App() {
@@ -25,10 +26,14 @@ function App() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <div>
-      <Navbar currentPage={currentPage} handlePageChange={handlePageChange} />
+    <VStack>
+      <Navbar
+        currentPage={currentPage}
+        handlePageChange={handlePageChange}
+        
+      />
       {renderPage()}
-    </div>
+    </VStack>
   );
 }
 

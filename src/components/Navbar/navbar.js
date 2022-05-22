@@ -19,10 +19,11 @@ function Navbar({ currentPage, handlePageChange }) {
         boxSize="full"
         w="100%"
         mb={4}
-        p={8}
+        p={5}
         pb="10px"
         backgroundColor="#344c5c"
         color={'white'}
+        rounded="sm"
       >
         <Box>
           <IconButton
