@@ -19,20 +19,20 @@ function Navbar({ currentPage, handlePageChange }) {
         boxSize="full"
         w="100%"
         mb={4}
-        p={5}
+        p={4}
         pb="10px"
         backgroundColor="#344c5c"
         color={'white'}
         rounded="sm"
       >
-        <Box>
+        <Box mt={1} ml={3}>
           <IconButton
             colorScheme="black"
             variant="outline"
-            mb={18}
-            boxSize="37px"
-            icon={isDark ? <ImSun /> : <BsMoonStars />}
+            rounded="xl"
+            boxSize="35px"
             isRound="true"
+            icon={isDark ? <ImSun /> : <BsMoonStars />}
             onClick={toggleColorMode}
           ></IconButton>
         </Box>
