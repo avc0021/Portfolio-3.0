@@ -11,7 +11,7 @@ function Navbar({ currentPage, handlePageChange }) {
   const isDark = colorMode === "dark";
 
   return (
-    <VStack>
+    <VStack class="navbar">
       <Flex
         align="center"
         pos="relative"
@@ -22,9 +22,11 @@ function Navbar({ currentPage, handlePageChange }) {
         p={4}
         pb="10px"
         backgroundColor="#344c5c"
-        color={'white'}
+        color={"white"}
         rounded="sm"
       >
+
+        {/* Dark Mode Switch */}
         <Box mt={1} ml={3}>
           <IconButton
             colorScheme="black"
@@ -36,6 +38,7 @@ function Navbar({ currentPage, handlePageChange }) {
             onClick={toggleColorMode}
           ></IconButton>
         </Box>
+        
         <Spacer></Spacer>
         <Box p="2" _hover={{ textDecoration: "underline" }}>
           <a href="#about" onClick={() => handlePageChange("About")}>
