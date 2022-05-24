@@ -64,14 +64,14 @@ function Resume() {
           <ul>APIs</ul>
           <ul>Node</ul>
           <ul>Express</ul>
-          <ul>MySql, Sequelize</ul>
-          <ul>MonogoDB, Mongoose</ul>
+          <ul>MySql (Sequelize)</ul>
+          <ul>MonogoDB (Mongoose)</ul>
           <ul>REST</ul>
           <br></br>
           <Text fontWeight="bold" color="white" as="u">
             Tools
           </Text>
-
+          <ul>Canva</ul>
           <ul>Gitbash</ul>
           <ul>Heroku</ul>
           <ul>Github</ul>
