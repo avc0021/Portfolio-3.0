@@ -64,9 +64,8 @@ function Resume() {
           <ul>APIs</ul>
           <ul>Node</ul>
           <ul>Express</ul>
-          <ul>MySql (Sequelize)</ul>
-          <ul>MonogoDB (Mongoose)</ul>
-          <ul>REST</ul>
+          <ul>MySql</ul>
+          <ul>MonogoDB</ul>
           <br></br>
           <Text fontWeight="bold" color="white" as="u">
             Tools

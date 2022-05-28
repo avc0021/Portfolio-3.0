@@ -29,8 +29,8 @@ function Navbar({ currentPage, handlePageChange }) {
         {/* Dark Mode Switch */}
         <Box mt={1} ml={3}>
           <IconButton
+            bgGradient={"linear(to-r, cyan.500, blue.500)"}
             colorScheme="black"
-            variant="outline"
             rounded="xl"
             boxSize="35px"
             isRound="true"
