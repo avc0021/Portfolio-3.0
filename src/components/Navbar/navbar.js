@@ -42,7 +42,7 @@ function Navbar({ currentPage, handlePageChange }) {
         <Spacer></Spacer>
         <Box p="2" _hover={{ textDecoration: "underline" }}>
           <a href="#about" onClick={() => handlePageChange("About")}>
-            About Me
+            About
           </a>
         </Box>
         <Box p="2" _hover={{ textDecoration: "underline" }}>
