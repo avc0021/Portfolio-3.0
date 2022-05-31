@@ -8,8 +8,7 @@
   [Contributing](#name)</br>
 
 # Description
-This is a single-page application portfolio for a web developer
-This porfolio includes About Me, Projects, Contact, and Resume. 
+This is a single-page application portfolio includes About Me, Projects, Contact, and Resume. 
 Also links for my social accounts as well as a link to full resume.
 
 # Install
