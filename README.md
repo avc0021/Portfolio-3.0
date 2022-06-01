@@ -19,7 +19,7 @@ Also links for my social accounts as well as a link to full resume.
 ![React](https://img.shields.io/badge/React-20232A?style=plastic&logo=react&logoColor=61DAFB) 
 
 # Usage
-See deployed link below:
+Deployed link:
 https://avc0021.github.io/Portfolio-3.0/
 
 # Contributing
