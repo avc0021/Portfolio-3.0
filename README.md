@@ -3,21 +3,26 @@
 # Table of Contents
   
   [Description](#description)</br>
-  [Install](#install)</br>
+  [Built With](#built-with)</br>
   [Usage](#usage)</br>
-  [Contributing](#name)</br>
+  [Contributing](#contributing)</br>
 
 # Description
-This is a single-page application portfolio for a web developer
-This porfolio includes About Me, Projects, Contact, and Resume. 
+This is a single-page application Portfolio includes About Me, Projects, Contact, and Resume. 
 Also links for my social accounts as well as a link to full resume.
 
-# Install
-The following needs to be installed to run this application.
-npm install
+## Built With
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=plastic&logo=html5&logoColor=white)
+</br>
+![CSS](https://img.shields.io/badge/CSS3-1572B6?style=plastic&logo=css3&logoColor=white)</br>
+![Javascript](https://img.shields.io/badge/JavaScript-F7DF1E?style=plastic&logo=javascript&logoColor=black)</br>
+![React](https://img.shields.io/badge/React-20232A?style=plastic&logo=react&logoColor=61DAFB) 
 
 # Usage
-See deployed link below:
+![ACPort](https://user-images.githubusercontent.com/91796423/171326739-4ed41721-7a56-4c7f-b653-4866c64f477c.png)
+
+
+Deployed link:
 https://avc0021.github.io/Portfolio-3.0/
 
 # Contributing
