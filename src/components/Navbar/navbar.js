@@ -23,11 +23,10 @@ function Navbar({ currentPage, handlePageChange }) {
         pb="10px"
         backgroundColor="#344c5c"
         color={"white"}
-        rounded="sm"
       >
 
         {/* Dark Mode Switch */}
-        <Box mt={1} ml={3}>
+        <Box mt={1} ml={3} mb={3}>
           <IconButton
             bgGradient={"linear(to-r, cyan.500, blue.500)"}
             colorScheme="black"

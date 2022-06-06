@@ -4,7 +4,7 @@ import Projects from "./components/Projects/projects.js";
 import About from "./components/About/about.js";
 import Resume from "./components/Resume/resume.js";
 import Contact from "./components/Contact/contact.js";
-import { VStack, Flex, Stack, HStack } from "@chakra-ui/layout";
+import { Stack } from "@chakra-ui/layout";
 import './App.css';
 
 function App() {
